@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshwanath Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Parshwanath Catering</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="burger-icon">☰</span>
+            <span class="cross-icon" style="display: none;">✖</span>
+        </div>
+        <script>
+            const navToggle = document.getElementById('navToggle');
+const burgerIcon = navToggle.querySelector('.burger-icon');
+const crossIcon = navToggle.querySelector('.cross-icon');
+
+navToggle.addEventListener('click', () => {
+    burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'inline' : 'none';
+    crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+});
+        </script>
+        <ul class="nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Culinary Excellence for Your Special Moments</h1>
+            <p>Crafting unforgettable dining experiences with passion and precision</p>
+            <a href="contact.html" class="cta-button">Book Your Event</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card" data-aos="fade-right">
+            <i class="fas fa-utensils"></i>
+            <h3>Custom Menus</h3>
+            <p>Tailored to your preferences and dietary requirements</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up">
+            <i class="fas fa-glass-cheers"></i>
+            <h3>Special Events</h3>
+            <p>From intimate gatherings to grand celebrations</p>
+        </div>
+        <div class="feature-card" data-aos="fade-right">
+            <i class="fas fa-star"></i>
+            <h3>Professional Service</h3>
+            <p>Experienced staff dedicated to excellence</p>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="about-content" data-aos="fade-right">
+            <h2>Crafting Culinary Magic</h2>
+            <p>At Parshwanath Catering, we believe that every event deserves exceptional food and service.
+                Our team of passionate chefs and event specialists work tirelessly to create memorable experiences.</p>
+            <a href="about.html" class="secondary-button">Learn More</a>
+        </div>
+        <div class="about-image" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Culinary Excellence">
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+        <h2>Our Culinary Creations</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033" alt="Catering Dish 1">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" alt="Catering Dish 2">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d" alt="Catering Dish 3">
+            </div>
+        </div>
+        <a href="gallery.html" class="view-more">View More</a>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial" data-aos="fade-up">
+                <p>"Exceptional service and absolutely delicious food. Our wedding was perfect thanks to Parshwanath
+                    Catering And Events!"</p>
+                <cite>- Meera Agarwal</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section class="contact-preview">
+        <div class="contact-content" data-aos="fade-up">
+            <h2>Let's Create Something Special</h2>
+            <p>Ready to plan your next event? Contact us for a personalized quote.</p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Parshwanath Catering</h3>
+                <p>Creating memorable experiences through exceptional cuisine</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: parshwanathcaterers@gmail.com</p>
+                <p>Phone: 8619143421 , 81077 65621 </p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parshwanath Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

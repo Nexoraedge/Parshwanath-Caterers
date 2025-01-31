@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Parshwanath Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Parshwanath Catering</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="burger-icon">☰</span>
+            <span class="cross-icon" style="display: none;">✖</span>
+        </div>
+        <script>
+            const navToggle = document.getElementById('navToggle');
+            const burgerIcon = navToggle.querySelector('.burger-icon');
+            const crossIcon = navToggle.querySelector('.cross-icon');
+
+            navToggle.addEventListener('click', () => {
+                burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        </script>
+        <ul class="nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Menu Hero -->
+    <header class="page-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Our Menu</h1>
+            <p>Exquisite dishes crafted with passion</p>
+        </div>
+    </header>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="appetizers">Appetizers</button>
+            <button class="category-tab" data-category="main-course">Main Course</button>
+            <button class="category-tab" data-category="desserts">Desserts</button>
+            <button class="category-tab" data-category="beverages">Beverages</button>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-items">
+        <!-- Appetizers -->
+        <div class="menu-category active" id="appetizers">
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a" alt="Bruschetta">
+                    <div class="item-info">
+                        <h3>Classic Bruschetta</h3>
+                        <p>Fresh tomatoes, basil, and garlic on toasted bread</p>
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+                <!-- More appetizers... -->
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category" id="main-course">
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Grilled Salmon">
+                    <div class="item-info">
+                        <h3>Grilled Atlantic Salmon</h3>
+                        <p>With herb butter sauce and seasonal vegetables</p>
+                        <span class="price">$28</span>
+                    </div>
+                </div>
+                <!-- More main courses... -->
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category" id="desserts">
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307" alt="Chocolate Cake">
+                    <div class="item-info">
+                        <h3>Dark Chocolate Cake</h3>
+                        <p>Rich chocolate layers with ganache</p>
+                        <span class="price">$15</span>
+                    </div>
+                </div>
+                <!-- More desserts... -->
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-category" id="beverages">
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Signature Cocktail">
+                    <div class="item-info">
+                        <h3>Signature Cocktails</h3>
+                        <p>Crafted by our expert mixologists</p>
+                        <span class="price">$14</span>
+                    </div>
+                </div>
+                <!-- More beverages... -->
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Download Menu Button -->
+    <div class="download-menu">
+        <a href="src/MENU (1).pdf" class="download-button">Show Menu</a>
+    </div>
+
+    <!-- Special Dietary Options -->
+    <section class="dietary-options">
+        <h2>Dietary Options Available</h2>
+        <div class="options-grid">
+            <div class="option" data-aos="fade-up">
+                <i class="fas fa-leaf"></i>
+                <span>Vegetarian</span>
+            </div>
+            <div class="option" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-seedling"></i>
+                <span>Vegan</span>
+            </div>
+            <div class="option" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-bread-slice"></i>
+                <span>Gluten-Free</span>
+            </div>
+            <div class="option" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-fish"></i>
+                <span>Pescatarian</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Menu Section -->
+    <section class="custom-menu">
+        <div class="custom-content" data-aos="fade-up">
+            <h2>Custom Menu</h2>
+            <p>Looking for something special? We can create a custom menu tailored to your event and preferences.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Parshwanath Catering</h3>
+                <p>Creating memorable experiences through exceptional cuisine</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@nexoracatering.com</p>
+                <p>Phone: 8619143421 , 81077 65621 </p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parshwanath Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

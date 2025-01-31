@@ -1,0 +1,322 @@
+/* Menu Page Specific Styles */
+.page-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('/src/menuimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, #fff, transparent);
+}
+
+.menu-categories {
+    padding: 2rem 10%;
+    background: var(--light-color);
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: none;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.category-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.category-tab:hover::after,
+.category-tab.active::after {
+    width: 80%;
+}
+
+.category-tab.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.menu-items {
+    padding: 3rem 10%;
+}
+
+.menu-category {
+    display: none;
+}
+
+.menu-category.active {
+    display: block;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background: var(--light-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 1.5rem;
+}
+
+.item-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.item-info p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.price {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.dietary-options {
+    padding: 4rem 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.dietary-options h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.option i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.custom-menu {
+    padding: 5rem 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1555244162-803834f70033');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.custom-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.custom-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.custom-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-categories {
+        padding: 1rem 5%;
+    }
+
+    .category-tab {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+
+    .menu-items {
+        padding: 2rem 5%;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Menu Book Styles */
+.menu-book {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    perspective: 1000px;
+    /* Perspective for 3D effect */
+}
+
+.book {
+    width: 200%;
+    /* Double the width for two pages */
+    height: 400px;
+    /* Adjust height as needed */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    /* Animation for flipping */
+}
+
+.page {
+    position: absolute;
+    width: 50%;
+    /* Each page takes half the width */
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hide back face */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page img {
+    width: auto;
+    /* Maintain aspect ratio */
+    height: 100%;
+    /* Fill the height of the page */
+    max-width: 100%;
+    /* Ensure it doesn't overflow */
+}
+
+#page1 {
+    transform: rotateY(0deg);
+    /* Front left page */
+}
+
+#page2 {
+    transform: rotateY(0deg);
+    /* Front right page */
+}
+
+#page3 {
+    transform: rotateY(180deg);
+    /* Back left page */
+}
+
+#page4 {
+    transform: rotateY(180deg);
+    /* Back right page */
+}
+
+/* Add more pages as needed */
+
+.flip-button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.flip-button:hover {
+    background: var(--secondary-color);
+}
+
+/* Download Menu Button Styles */
+.download-menu {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.download-button {
+    background-color: gold;
+    /* White background */
+    color: white;
+    /* Golden text */
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    /* Golden border */
+    border-radius: 5px;
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1.2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.download-button:hover {
+    background-color: black;
+    /* Change background on hover */
+    color: gold;
+    /* Change text color on hover */
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Parshwanath Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/conatct.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Parshwanath Catering</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="burger-icon">☰</span>
+            <span class="cross-icon" style="display: none;">✖</span>
+        </div>
+        <script>
+            const navToggle = document.getElementById('navToggle');
+            const burgerIcon = navToggle.querySelector('.burger-icon');
+            const crossIcon = navToggle.querySelector('.cross-icon');
+
+            navToggle.addEventListener('click', () => {
+                burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        </script>
+        <ul class="nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Get in Touch</h1>
+            <p>Let's create something extraordinary together</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="contact-grid">
+            <div class="contact-card" data-aos="fade-up">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Location</h3>
+                <p>B-18 , Mohanbari</p>
+                <p>Surajpole gate , Jaipur</p>
+            </div>
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-phone"></i>
+                <h3>Phone Number</h3>
+                <p>8619143421 , 81077 65621 </p>
+                <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+            </div>
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Address</h3>
+                <p>info@nexoracatering.com</p>
+                <p>events@nexoracatering.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <div class="contact-form-text" data-aos="fade-right">
+                <h2>Contact Us on WhatsApp</h2>
+                <p>For immediate assistance, feel free to reach out to us on WhatsApp. Enter your message below and
+                    click the button to send it!</p>
+            </div>
+            <div class="whatsapp-link" data-aos="fade-up">
+                <textarea id="whatsapp-message" rows="4" placeholder="Type your message here..."
+                    style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 1rem;"></textarea>
+                <a href="#" class="submit-btn" id="whatsapp-button">Message Us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-overlay"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.800640449956!2d75.84540618594644!3d26.918317514251562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db7900966022b%3A0xcbc7d3cd2f9f0a61!2sParshwanath%20Caterers!5e0!3m2!1sen!2sin!4v1738314657149!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Parshwanath Catering</h3>
+                <p>Creating memorable experiences through exceptional cuisine.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>B-18 , Mohanbari</p>
+                <p>Surajpole gate , Jaipur</p>
+                <p>Phone: 8619143421 , 81077 65621 </p>
+                <p>Email: info@nexoracatering.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parshwanath Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function() {
+    const phoneNumber = '8619143421'; // Replace with your WhatsApp number
+    const message = document.getElementById('whatsapp-message').value || 'Hello Parshwanath Catering, I would like to inquire about your services.'; // Default message if none is provided
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Parshwanath Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Parshwanath Catering</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="burger-icon">☰</span>
+            <span class="cross-icon" style="display: none;">✖</span>
+        </div>
+        <script>
+            const navToggle = document.getElementById('navToggle');
+            const burgerIcon = navToggle.querySelector('.burger-icon');
+            const crossIcon = navToggle.querySelector('.cross-icon');
+
+            navToggle.addEventListener('click', () => {
+                burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        </script>
+        <ul class="nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>About Us</h1>
+            <p>Crafting Culinary Excellence Since 2010</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="about-story" data-aos="fade-right">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Parshwanath Catering has been at the forefront of culinary excellence,
+                bringing exceptional dining experiences to countless events and celebrations.</p>
+            <p>What started as a small family business has grown into one of the region's most respected catering
+                services, thanks to our unwavering commitment to quality and customer satisfaction.</p>
+            <p>Today, we continue to push the boundaries of culinary creativity while staying true to our core values of
+                passion, excellence, and integrity.</p>
+        </div>
+        <div class="about-image" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Our Kitchen">
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <h2 data-aos="fade-up">Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-heart"></i>
+                <h3>Passion</h3>
+                <p>We pour our heart into every dish we create, ensuring each bite tells a story of dedication and love
+                    for culinary arts.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-star"></i>
+                <h3>Excellence</h3>
+                <p>Committed to the highest standards in everything we do, from ingredient selection to service
+                    delivery.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-handshake"></i>
+                <h3>Integrity</h3>
+                <p>Building trust through honest and transparent service, treating each event as if it were our own.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2 data-aos="fade-up">Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                <img src="src/lo.jpg" alt="Executive Chef">
+                <h3>Lokesh Jain</h3>
+                <p>Co-Founder</p>
+            </div>
+            <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                <img src="src/pi.jpg" alt="Culinary Director">
+                <h3>Praveen Jain</h3>
+                <p>Founder</p>
+            </div>
+            <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                <img src="src/him.jpg" alt="Event Coordinator">
+                <h3>Himanshu Jain</h3>
+                <p>Event Coordinator</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2 data-aos="fade-up">Our Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement" data-aos="fade-up" data-aos-delay="100">
+                <h3>1000+</h3>
+                <p>Events Catered</p>
+            </div>
+            <div class="achievement" data-aos="fade-up" data-aos-delay="200">
+                <h3>50+</h3>
+                <p>Corporate Clients</p>
+            </div>
+            <div class="achievement" data-aos="fade-up" data-aos-delay="300">
+                <h3>15+</h3>
+                <p>Industry Awards</p>
+            </div>
+            <div class="achievement" data-aos="fade-up" data-aos-delay="400">
+                <h3>100%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Parshwanath Catering</h3>
+                <p>Creating memorable experiences through exceptional cuisine.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>B-18 MohanBadi</p>
+                <p>Surajpole-Gate ,Jaipur</p>
+                <p>Phone: 86191 43421 , 81077 65621 </p>
+                <p>Email: info@nexoracatering.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parshwanath Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

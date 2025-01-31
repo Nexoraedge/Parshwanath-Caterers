@@ -1,0 +1,82 @@
+/* Parallax Scrolling Styles */
+
+/* Basic Parallax Section */
+.parallax-section {
+    /* Fixed background */
+    background-attachment: fixed;
+    /* Prevent background repeat */
+    background-repeat: no-repeat;
+    /* Cover the container */
+    background-size: cover;
+    /* Center the background */
+    background-position: center;
+    /* Set height */
+    min-height: 500px;
+    /* For content positioning */
+    position: relative;
+    /* Enable 3D transforms for smoother parallax */
+    transform-style: preserve-3d;
+    /* Better performance */
+    will-change: transform;
+}
+
+/* Advanced Parallax with Multiple Layers */
+.parallax-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Different depth layers */
+.parallax-deep {
+    transform: translateZ(-2px) scale(2);
+}
+
+.parallax-medium {
+    transform: translateZ(-1px) scale(1.5);
+}
+
+.parallax-shallow {
+    transform: translateZ(0);
+}
+
+/* Content overlay for parallax sections */
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+/* Example parallax sections */
+.parallax-hero {
+    background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033');
+    height: 100vh;
+}
+
+.parallax-menu {
+    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+    height: 60vh;
+}
+
+.parallax-testimonial {
+    background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288');
+    height: 50vh;
+}
+
+/* Smooth Scroll for better parallax effect */
+html {
+    scroll-behavior: smooth;
+}

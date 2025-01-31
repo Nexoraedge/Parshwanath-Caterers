@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Parshwanath Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Parshwanath Catering</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="burger-icon">☰</span>
+            <span class="cross-icon" style="display: none;">✖</span>
+        </div>
+        <script>
+            const navToggle = document.getElementById('navToggle');
+            const burgerIcon = navToggle.querySelector('.burger-icon');
+            const crossIcon = navToggle.querySelector('.cross-icon');
+
+            navToggle.addEventListener('click', () => {
+                burgerIcon.style.display = burgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        </script>
+        <ul class="nav-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Our Gallery</h1>
+            <p>A visual feast of our culinary creations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="private">Private Events</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="weddings" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed" alt="Wedding Catering">
+                    <div class="item-overlay">
+                        <h3>Elegant Wedding Reception</h3>
+                        <p>Luxury wedding catering service</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="corporate" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622" alt="Corporate Event">
+                    <div class="item-overlay">
+                        <h3>Corporate Lunch</h3>
+                        <p>Professional catering for business events</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="private" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" alt="Private Party">
+                    <div class="item-overlay">
+                        <h3>Birthday Celebration</h3>
+                        <p>Custom menus for special occasions</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d" alt="Gourmet Food">
+                    <div class="item-overlay">
+                        <h3>Gourmet Appetizers</h3>
+                        <p>Delectable bite-sized creations</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="weddings" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Wedding Setup">
+                    <div class="item-overlay">
+                        <h3>Garden Wedding</h3>
+                        <p>Outdoor catering excellence</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033" alt="Fine Dining">
+                    <div class="item-overlay">
+                        <h3>Fine Dining Experience</h3>
+                        <p>Exquisite plated meals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="instagram-header" data-aos="fade-up">
+            <h2>Follow Us on Instagram</h2>
+            <p>Stay updated with our latest creations and events</p>
+        </div>
+        <div class="instagram-grid" data-aos="fade-up">
+            <!-- Instagram posts will be dynamically added by gallery.js -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Parshwanath Catering</h3>
+                <p>Creating memorable experiences through exceptional cuisine.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>B-18 , Mohanbari</p>
+                <p>Surajpole gate , Jaipur</p>
+                <p>Phone: 8619143421 , 81077 65621 </p>
+                <p>Email: info@nexoracatering.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parshwanath Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
