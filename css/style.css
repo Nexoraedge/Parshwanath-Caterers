@@ -95,7 +95,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/src/WhatsApp\ Image\ 2024-12-30\ at\ 10.45.43_057e40f0.jpg');
+        url('https://i.pinimg.com/736x/c2/6f/39/c26f39abcf27b795a0b6f74e9b61b3f3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

@@ -3,7 +3,7 @@
 .gallery-hero {
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('/src/IMG20241205182511.jpg');
+                url('https://i.pinimg.com/736x/ce/ea/75/ceea75d99ca3e5e21c2369dbd430dcde.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

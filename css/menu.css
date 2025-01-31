@@ -2,7 +2,7 @@
 .page-hero {
     height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('/src/menuimg.jpg');
+                url('https://i.pinimg.com/736x/00/e1/59/00e159615fbd483389f550d827132245.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
